@@ -4,8 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CorgAI - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset and Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #00695C; /* Teal */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #FF7043; /* Orange */
+        }
+
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #hero h2 {
+            color: #00695C;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            margin: 10px 0;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #00695C; /* Teal */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background-color: #FF7043; /* Orange */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #004D40; /* Darker Teal */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer img {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #FF7043; /* Orange */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="logo">
@@ -24,10 +134,10 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Hero Section -->
     <main>
         <section id="hero">
-            <h2>Your Title Here</h2>
+            <h2>Welcome to CorgAI</h2>
             <h3>How are AI influencers reshaping marketing?</h3>
             <p>
                 A website report that was created in partial fulfillment of the academic requirements for
@@ -42,20 +152,17 @@
                 <a href="disruptive-impact.html">Disruptive Impact</a>
                 <a href="future-onwards.html">Future Onwards</a>
                 <a href="conclusion.html">Conclusion</a>
-                <a href="references.html">Reference</a>
+                <a href="references.html">References</a>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="footer-logo">
-            <img src="logo.png" alt="CorgAI Logo" width="40">
-            <p>CorgAI (Website) &copy; 2024 by MMS 142</p>
-        </div>
-        <p>
-            Group I is licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
-        </p>
+        <img src="logo.png" alt="CorgAI Logo" width="40">
+        <p>CorgAI (Website) &copy; 2024 by MMS 142</p>
+        <p>Group I is licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
     </footer>
+
 </body>
 </html>
