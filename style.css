@@ -1,10 +1,61 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2d1a69; /* Deep violet background */
+    background-color: #171721; /* Dark background for the homepage */
     color: #ffffff; /* White text for contrast */
     margin: 0;
     padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: white; /* White header background */
+    color: #333;
+    padding: 10px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    margin-left: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+/* Hover effect for navigation links */
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: #fbb03b; /* Yellow hover color */
+}
+
+header nav ul li a:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fbb03b; /* Yellow circular backdrop */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Hero section */
@@ -47,6 +98,16 @@ h2 {
 .hero-text {
     max-width: 600px;
     padding-left: 20px;
+    position: relative;
+}
+
+.hero-text h3 {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 10%; /* Position text at the top above the image */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Button links */
@@ -68,8 +129,8 @@ h2 {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(45deg, #9b4dca, #ff6f61, #fbb03b); /* Gradient footer */
-    color: white;
+    background-color: white; /* White footer background */
+    color: #333;
     padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -82,37 +143,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Header Section */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header .logo h1 {
-    margin-left: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
 }
